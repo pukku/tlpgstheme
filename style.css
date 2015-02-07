@@ -1,0 +1,399 @@
+/**
+ * a sensible way to make boxes work
+ */
+* {
+  box-sizing: border-box; }
+
+/**
+ * Zero out the margin and padding on a bunch of elements.
+ */
+body,
+header, footer, article, div, table, figure,
+nav ul, li,
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Dead Simple Grid (c) 2012 Vladimir Agafonkin
+ * https://github.com/mourner/dead-simple-grid
+ * (modified for my purposes)
+ */
+.col {
+  padding: 0; }
+
+.row:before, .row:after {
+  content: "";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+@media only screen {
+  .col {
+    float: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+/**
+ * Helper classes for making things clear floats properly
+ */
+.clear {
+  clear: both; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * styles for various elements
+ */
+body {
+  background-color: #330066;
+  color: white;
+  font-family: "Muli", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #f7e62c;
+  font-weight: bold; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.4rem; }
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.4rem; }
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.2rem; }
+
+h4, h5, h6 {
+  font-size: 1rem; }
+
+p {
+  margin-bottom: 1.2rem; }
+  p.note {
+    color: #f7e62c; }
+  p.important {
+    color: #f7e62c;
+    font-weight: bold; }
+  p.internal {
+    margin-bottom: 0; }
+
+address {
+  margin-bottom: 1.2rem; }
+
+table {
+  margin-bottom: 1.2rem; }
+  table th, table td {
+    padding: 1rem 0.5rem;
+    text-align: left;
+    vertical-align: top; }
+  table thead th {
+    vertical-align: bottom; }
+
+ul {
+  margin-bottom: 1.2rem; }
+
+a {
+  color: #f7e62c;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a.money {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2rem; }
+
+u {
+  text-decoration: none;
+  color: #f7e62c; }
+
+/**
+ * set column widths and control navigation bars based on screen size.
+ * for the "narrow" case, all of the columns default to 100%, so we just
+ * need to modify which nav gets shows. for the "normal" case, we hide
+ * the mobile nav, and change the size of several of the columns
+ */
+@media only screen and (max-width: 600px) {
+  .col.desktop-nav {
+    display: none; }
+
+  .col.mobile-nav {
+    display: block; } }
+@media only screen and (min-width: 601px) {
+  .col.logo {
+    width: 25%;
+    padding-right: 1.2rem;
+    /* add a small gutter */ }
+
+  .col.headline {
+    width: 75%; }
+
+  .col.desktop-nav {
+    display: block;
+    width: 25%;
+    padding-right: 1.2rem;
+    /* add a small gutter */ }
+
+  .col.main {
+    width: 75%; }
+
+  .col.mobile-nav {
+    display: none; } }
+header#tlp-header {
+  margin-bottom: 1.2rem;
+  background-color: black; }
+  header#tlp-header.tlp-header-background-1 {
+    background: url(images/header_background/a_new_brain_1.jpg) 100% -30px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-2 {
+    background: url(images/header_background/charlie_brown_1.jpg) 50% 0px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-3 {
+    background: url(images/header_background/charlie_brown_2.jpg) 100% -50px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-4 {
+    background: url(images/header_background/chess_1.jpg) 50% -60px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-5 {
+    background: url(images/header_background/chess_2.jpg) 50% -30px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-6 {
+    background: url(images/header_background/chess_3.jpg) 60% -90px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-7 {
+    background: url(images/header_background/earnest_1.jpg) 15% -100px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-8 {
+    background: url(images/header_background/earnest_2.jpg) 50% -100px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-9 {
+    background: url(images/header_background/hedda_gabler_1.jpg) 100% -50px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-10 {
+    background: url(images/header_background/hedda_gabler_2.jpg) 10% -50px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-11 {
+    background: url(images/header_background/hedda_gabler_3.jpg) 10% -70px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-12 {
+    background: url(images/header_background/lend_me_a_tenor_1.jpg) 20% -60px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-13 {
+    background: url(images/header_background/secret_garden_1.jpg) 50% -75px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-14 {
+    background: url(images/header_background/secret_garden_2.jpg) 50% -75px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-15 {
+    background: url(images/header_background/secret_garden_3.jpg) 50% -75px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-16 {
+    background: url(images/header_background/secret_garden_4.jpg) 50% -75px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-17 {
+    background: url(images/header_background/she_loves_me_1.jpg) 50% -75px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-18 {
+    background: url(images/header_background/she_loves_me_2.jpg) 50% -75px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-19 {
+    background: url(images/header_background/she_loves_me_3.jpg) 50% -25px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-20 {
+    background: url(images/header_background/she_loves_me_4.jpg) 50% -100px no-repeat border-box; }
+  header#tlp-header.tlp-header-background-21 {
+    background: url(images/header_background/she_loves_me_5.jpg) 20% -60px no-repeat border-box; }
+  header#tlp-header .purplehaze {
+    margin: 0;
+    padding: 2.4rem 1.2rem;
+    background-color: rgba(51, 0, 102, 0.7);
+    background: linear-gradient(rgba(51, 0, 102, 0.5) 50%, rgba(51, 0, 102, 0.7) 80%, #330066);
+    vertical-align: middle; }
+  header#tlp-header a:hover {
+    text-decoration: none; }
+  header#tlp-header .logo {
+    text-align: right; }
+    @media only screen and (max-width: 600px) {
+      header#tlp-header .logo {
+        text-align: center;
+        padding-bottom: 0.6rem; } }
+  header#tlp-header .headline {
+    /* these font sizes are *not* related to the text-rhythm */ }
+    header#tlp-header .headline h1, header#tlp-header .headline h2 {
+      margin: 0;
+      padding: 0; }
+    @media only screen and (max-width: 600px) {
+      header#tlp-header .headline {
+        text-align: center; } }
+    header#tlp-header .headline h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+      letter-spacing: 0.2rem;
+      color: #f7e62c;
+      font-weight: bold; }
+    header#tlp-header .headline h2 {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1rem;
+      letter-spacing: 0.2rem;
+      color: white;
+      font-weight: normal;
+      font-style: italic; }
+
+footer#tlp-footer {
+  padding: 0.25rem;
+  padding-left: 0.4rem;
+  font-size: 0.5rem;
+  line-height: 0.6rem; }
+  footer#tlp-footer p {
+    margin: 0; }
+
+nav {
+  /* for the mobile navigation, don't do the weird rounded corner */ }
+  nav ul {
+    margin-bottom: 1.2rem;
+    list-style-type: none;
+    font-size: 1rem;
+    line-height: 1.2rem; }
+    nav ul li {
+      border-bottom: thin solid #f7e62c;
+      height: 1.7rem;
+      overflow: hidden; }
+      nav ul li.title {
+        padding: 0.25rem;
+        padding-left: 0.4rem;
+        border: none;
+        border-top-right-radius: 1.2rem;
+        color: #330066;
+        background-color: #f7e62c; }
+      nav ul li a {
+        padding: 0.25rem;
+        padding-left: 0.4rem;
+        height: 1.7rem;
+        display: block;
+        color: white; }
+        nav ul li a:hover {
+          color: #330066;
+          background-color: #f7e62c;
+          text-decoration: none; }
+    nav ul#home {
+      margin-top: 1.2rem; }
+      nav ul#home li:first {
+        /* the first menu needs to go up just a tad to account for
+           the cell padding, but still make the bottom border line up
+           with the border of div.content */
+        margin-top: -0.5rem;
+        height: inherit; }
+      @media only screen and (max-width: 600px) {
+        nav ul#home li {
+          border-top: thin solid #f7e62c; } }
+  nav.mobile-nav li.title {
+    border-top-right-radius: 0; }
+
+article header h1 {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: 300;
+  color: white; }
+  @media only screen and (max-width: 600px) {
+    article header h1 {
+      padding-left: 0.4rem; } }
+article div.content {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  min-height: 30.3rem;
+  border-left: thin solid #f7e62c;
+  border-top: thin solid #f7e62c;
+  border-top-left-radius: 2.4rem; }
+  @media only screen and (max-width: 600px) {
+    article div.content {
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      border-left: none;
+      border-top-left-radius: 0; } }
+article footer {
+  text-align: right;
+  font-size: 0.5rem;
+  line-height: 1.2rem; }
+
+table.show-person-list {
+  width: 100%; }
+  table.show-person-list tr, table.show-person-list th, table.show-person-list td {
+    margin: 0;
+    padding: 0; }
+  table.show-person-list th {
+    padding: 0.25rem 0;
+    padding-top: 1.2rem;
+    vertical-align: bottom;
+    color: #f7e62c; }
+  table.show-person-list td {
+    border-bottom: thin solid rgba(247, 230, 44, 0.5);
+    padding: 0.25rem 0;
+    vertical-align: top; }
+    table.show-person-list td.left {
+      width: 40%; }
+    table.show-person-list td.right {
+      width: 50%;
+      text-align: right; }
+
+div.content.front .col {
+  width: 50%;
+  padding: 0.6rem 0.6rem; }
+div.content.front .row.first-row .col.next-show img {
+  min-width: 100%;
+  max-width: 100%; }
+div.content.front .row.second-row {
+  margin-bottom: 1.2rem; }
+  div.content.front .row.second-row .col.season {
+    border: thin solid #f7e62c; }
+    div.content.front .row.second-row .col.season h3 {
+      margin-top: 1.2rem;
+      margin-bottom: 0; }
+    div.content.front .row.second-row .col.season p {
+      margin: 0; }
+
+div.news-listing div.news-item {
+  margin-bottom: 1.2rem;
+  padding-right: 1.2rem; }
+  div.news-listing div.news-item.pinned {
+    border-right: thin solid #f7e62c; }
+  div.news-listing div.news-item h3 {
+    margin-bottom: 0; }
+  div.news-listing div.news-item p.pubdate {
+    color: #f7e62c;
+    font-size: 0.8rem;
+    margin-bottom: 0; }
+
+div.content.show figure.show-poster {
+  margin-bottom: 1.2rem; }
+  div.content.show figure.show-poster .col.show-poster-poster {
+    width: 33%;
+    padding-right: 1.2rem; }
+    div.content.show figure.show-poster .col.show-poster-poster img {
+      min-width: 100%;
+      max-width: 100%; }
+  div.content.show figure.show-poster .col.show-poster-caption {
+    width: 66%; }
+    div.content.show figure.show-poster .col.show-poster-caption div.show-playcredits, div.content.show figure.show-poster .col.show-poster-caption div.show-tlpcredits, div.content.show figure.show-poster .col.show-poster-caption div.show-date-and-space {
+      margin-bottom: 1.2rem; }
+div.content.show div.show-teaser {
+  margin-bottom: 1.2rem; }
+div.content.show div.show-gallery {
+  margin-bottom: 1.2rem; }
+  div.content.show div.show-gallery img {
+    padding-right: 0.5rem;
+    vertical-align: top; }
+  div.content.show div.show-gallery p.show-gallery-link {
+    font-size: 0.8rem; }
+
+div.content.show-list figure.show-list-item {
+  margin-bottom: 1.2rem; }
+  div.content.show-list figure.show-list-item .col.show-list-poster {
+    width: 33%;
+    padding-right: 1.2rem; }
+    div.content.show-list figure.show-list-item .col.show-list-poster img {
+      min-width: 100%;
+      max-width: 100%; }
+  div.content.show-list figure.show-list-item .col.show-list-caption {
+    width: 66%; }
+    div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-playcredit, div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-tlpcredit, div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-month {
+      margin-bottom: 1.2rem; }
+    div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-content {
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem; }

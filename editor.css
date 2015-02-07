@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400);
+* {
+  box-sizing: border-box; }
+
+body,
+header, footer, article, div, table, figure,
+nav ul, li,
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 1rem;
+  background-color: #330066;
+  color: white;
+  font-family: "Muli", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #f7e62c;
+  font-weight: bold; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 3rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.2rem; }
+
+h4, h5, h6 {
+  font-size: 1rem; }
+
+p {
+  margin-bottom: 1.5rem; }
+  p.note {
+    color: #f7e62c; }
+  p.important {
+    color: #f7e62c;
+    font-weight: bold; }
+
+address {
+  margin-bottom: 1.5rem; }
+
+table {
+  margin-bottom: 1.5rem; }
+  table th, table td {
+    padding: 1rem 0.5rem;
+    text-align: left;
+    vertical-align: top; }
+  table thead th {
+    vertical-align: bottom; }
+
+ul {
+  margin-bottom: 1.5rem; }
+
+a {
+  color: #f7e62c;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a.money {
+    text-decoration: underline;
+    font-weight: bold; }
+
+u {
+  text-decoration: none;
+  color: #f7e62c; }

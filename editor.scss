@@ -1,0 +1,104 @@
+$purple: hsl(270, 100%, 20%);
+$yellow: hsl(55, 93%, 57.2%);
+$white:  hsl(0, 100%, 100%);
+
+$text-rhythm: 1.5rem;
+$cell-padding: 0.25rem;
+
+* {
+	box-sizing: border-box;
+}
+body,
+header, footer, article, div, table, figure,
+nav ul, li,
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 0;
+	padding: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400);
+
+body {
+	padding: 1rem;
+	background-color: $purple;
+	color: $white;
+
+	font-family: "Muli", "Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	line-height: $text-rhythm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: $text-rhythm;
+
+	font-size: 1rem;
+	line-height: $text-rhythm;
+
+	color: $yellow;
+	font-weight: bold;
+}
+h1 {
+	font-size: 2rem;
+	line-height: 2*$text-rhythm;
+}
+h2 {
+	font-size: $text-rhythm;
+}
+h3 {
+	font-size: 1.2rem;
+}
+h4, h5, h6 {
+	font-size: 1rem;
+}
+
+p {
+	margin-bottom: $text-rhythm;
+
+	&.note {
+		color: $yellow;
+	}
+	&.important {
+		color: $yellow;
+		font-weight: bold;
+	}
+}
+address {
+	margin-bottom: $text-rhythm;
+}
+
+table {
+	margin-bottom: $text-rhythm;
+
+	th, td {
+		padding: (4 * $cell-padding) (2 * $cell-padding);
+		text-align: left;
+		vertical-align: top;
+	}
+
+	thead th {
+		vertical-align: bottom;
+	}
+}
+ul {
+	margin-bottom: $text-rhythm;
+}
+
+a {
+	color: $yellow;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&.money {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+}
+
+u {
+	text-decoration: none;
+	color: $yellow;
+}
