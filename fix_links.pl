@@ -8,7 +8,7 @@ use strict;
 # it does *not* actually make the changes, because I'm a wimp
 
 my $source = 'localhost:8888';
-my $dest = 'test.longwoodplayers.com';
+my $dest = 'gstest.longwoodplayers.org';
 
 my @files = `grep -rl "$source" *`;
 
