@@ -28,6 +28,9 @@ $ls-tiny: $text-rhythm;
 $fs-smaller: 0.8rem;
 $ls-smaller: $text-rhythm;
 
+// poster sizes
+$poster-size: 250px;
+
 
 // some media queries
 $mq-narrow: "only screen and (max-width : 600px)";
@@ -571,10 +574,11 @@ div.content.show {
 
 		.col.show-poster-poster {
 			width: 33%;
+			max-width: $poster-size;
 			padding-right: $text-rhythm;
 			img {
-				min-width: 100%;
-				max-width: 100%;
+				width: 100%;
+				max-width: $poster-size;
 			}
 		}
 		.col.show-poster-caption {
@@ -612,10 +616,11 @@ div.content.show-list {
 
 		.col.show-list-poster {
 			width: 33%;
+			max-width: $poster-size;
 			padding-right: $text-rhythm;;
 			img {
-				min-width: 100%;
-				max-width: 100%;
+				width: 100%;
+				max-width: $poster-size;
 			}
 		}
 		.col.show-list-caption {

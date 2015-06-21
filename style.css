@@ -364,10 +364,11 @@ div.content.show figure.show-poster {
   margin-bottom: 1.2rem; }
   div.content.show figure.show-poster .col.show-poster-poster {
     width: 33%;
+    max-width: 250px;
     padding-right: 1.2rem; }
     div.content.show figure.show-poster .col.show-poster-poster img {
-      min-width: 100%;
-      max-width: 100%; }
+      width: 100%;
+      max-width: 250px; }
   div.content.show figure.show-poster .col.show-poster-caption {
     width: 66%; }
     div.content.show figure.show-poster .col.show-poster-caption div.show-playcredits, div.content.show figure.show-poster .col.show-poster-caption div.show-tlpcredits, div.content.show figure.show-poster .col.show-poster-caption div.show-date-and-space {
@@ -386,10 +387,11 @@ div.content.show-list figure.show-list-item {
   margin-bottom: 1.2rem; }
   div.content.show-list figure.show-list-item .col.show-list-poster {
     width: 33%;
+    max-width: 250px;
     padding-right: 1.2rem; }
     div.content.show-list figure.show-list-item .col.show-list-poster img {
-      min-width: 100%;
-      max-width: 100%; }
+      width: 100%;
+      max-width: 250px; }
   div.content.show-list figure.show-list-item .col.show-list-caption {
     width: 66%; }
     div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-playcredit, div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-tlpcredit, div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-month {
