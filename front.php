@@ -15,18 +15,16 @@
 		<div class="content front">
 			<div class="row first-row">
 				<div class="col next-show">
+					<h2><a href="tickets">Buy Tickets Now</a></h2>
 					<?php
 						$shows = tlp_showlisting_filter('upcoming');
 						$slug = $shows[0];
 						if (!empty($slug)) {
 							$title = returnPageField($slug, 'title');
 							$poster = returnPageField($slug, 'poster');
-							echo '<h2>' . $title . '</h2>';
 							echo '<a href="' . $slug . '"><img src="' . $poster . '" alt="Poster for ' . $title . '"></a>';
-							echo '<p><a href="tickets" class="money">Buy tickets now!</a></p>';
 						}
 						else {
-							echo '<h2>Coming up</h2>';
 							echo '<p>Check back soon to find out about our next production!</p>';
 						}
 					?>

@@ -8,7 +8,7 @@ $white:  hsl(0, 100%, 100%);
 // basic values
 $text-rhythm: 1.2rem;
 $cell-padding: 0.25rem;
-$max-main-row-width: 1000px;
+//$max-main-row-width: 1000px;
 
 // font sizes
 $fs-body: 1rem;
@@ -31,7 +31,6 @@ $ls-smaller: $text-rhythm;
 
 // poster sizes
 $poster-size: 250px;
-
 
 // some media queries
 $mq-narrow: "only screen and (max-width : 600px)";
@@ -365,9 +364,9 @@ footer#tlp-footer {
 	}
 }
 
-div#main-row {
-	max-width: $max-main-row-width;
-}
+//div#main-row {
+//	max-width: $max-main-row-width;
+//}
 
 $nav-padding: $cell-padding;
 $nav-inset: ($text-rhythm / 3);
@@ -531,8 +530,8 @@ div.content.front {
 	.row.first-row {
 		.col.next-show {
 			img {
-				min-width: 100%;
-				max-width: 100%;
+				width: 100%;
+				max-width: $poster-width;
 			}
 		}
 		.col.news {
