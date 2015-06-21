@@ -3,7 +3,7 @@
 	<title><?php get_page_clean_title(); ?> | <?php get_site_name(); ?></title>
 	<?php get_header(); ?>
 	<!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'> -->
-	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Muli:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/style.css" />
 
