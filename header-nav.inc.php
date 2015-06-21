@@ -12,7 +12,7 @@
 	</div>
 </header>
 
-<div class="row">
+<div class="row" id="main-row">
 
 <nav class="col desktop-nav slug-<?php get_page_slug(); ?>">
 <?php include('nav.inc.php'); ?>

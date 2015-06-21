@@ -8,6 +8,7 @@ $white:  hsl(0, 100%, 100%);
 // basic values
 $text-rhythm: 1.2rem;
 $cell-padding: 0.25rem;
+$max-main-row-width: 1000px;
 
 // font sizes
 $fs-body: 1rem;
@@ -358,6 +359,10 @@ footer#tlp-footer {
 	p {
 		margin: 0;
 	}
+}
+
+div#main-row {
+	max-width: $max-main-row-width;
 }
 
 $nav-padding: $cell-padding;
