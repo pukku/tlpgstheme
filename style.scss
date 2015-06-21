@@ -207,24 +207,28 @@ u {
 	}
 }
 @media #{$mq-normal} {
-	.col.logo {
-		width: 25%;
-	 	padding-right: $text-rhythm; /* add a small gutter */
-	}
-	.col.headline {
-		width: 75%;
-	}
-
 	.col.desktop-nav {
 		display: block;
 		width: 25%;
-	 	padding-right: $text-rhythm; /* add a small gutter */
+		padding-right: $text-rhythm; /* add a small gutter */
 	}
 	.col.main {
 		width: 75%;
 	}
 	.col.mobile-nav {
 		display: none;
+	}
+
+}
+
+// header stuff
+@media #{$mq-normal} {
+	.col.logo {
+		width: 25%;
+		padding-right: $text-rhythm; /* add a small gutter */
+	}
+	.col.headline {
+		width: 75%;
 	}
 
 }
