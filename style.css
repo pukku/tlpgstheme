@@ -282,6 +282,24 @@ nav {
   nav.mobile-nav li.title {
     border-top-right-radius: 0; }
 
+/* trick to make the current item in the navigation highlighted.
+ * this doesn't work when too many more pages are added, but is ok for now. */
+body#index nav a[href="index"],
+body#news nav a[href="news"],
+body#upcoming nav a[href="upcoming"],
+body#tickets nav a[href="tickets"],
+body#directions nav a[href="directions"],
+body#donate nav a[href="donate"],
+body#auditions nav a[href="auditions"],
+body#volunteer nav a[href="volunteer"],
+body#past-productions nav a[href="past-productions"],
+body#awards nav a[href="awards"],
+body#about nav a[href="about"],
+body#mission nav a[href="mission"],
+body#contact nav a[href="contact"] {
+  color: #330066;
+  background-color: #f7e62c; }
+
 article header h1 {
   margin: 0;
   padding-left: 1.2rem;
