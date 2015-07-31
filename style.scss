@@ -620,7 +620,7 @@ div.content.show {
 
 div.content.show-list {
 	figure.show-list-item {
-		margin-bottom: $text-rhythm;
+		margin-bottom: 2 * $text-rhythm;
 
 		.col.show-list-poster {
 			width: 33%;
