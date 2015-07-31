@@ -130,7 +130,7 @@ function tlp_showlisting_process_show ($slug, $added_fields, $class) {
 }
 
 // return the front page items up to num
-function tlp_frontpage_newsitems_slugs ($num = 3) {
+function tlp_frontpage_newsitems_slugs ($num = 3, $minforpinned = 2) {
 
 	// get all news items, and sort them by slug descending
 	$items = getChildrenMulti('news', array('slug', 'pin'));
@@ -141,7 +141,7 @@ function tlp_frontpage_newsitems_slugs ($num = 3) {
 	$good = array();
 	$hold = array();
 
-	while ((count($good) < ($num - 2)) && (!empty($items))) {
+	while ((count($good) < $minforpinned) && (!empty($items))) {
 		$good[] = array_shift($items);
 	}
 
