@@ -430,3 +430,16 @@ div.content.show-list figure.show-list-item {
     div.content.show-list figure.show-list-item .col.show-list-caption div.show-list-content {
       margin-top: 1.2rem;
       margin-bottom: 1.2rem; }
+
+/* these are hacks to make the social media icons available to the contact us page */
+body#contact span.social-media {
+  vertical-align: middle;
+  max-height: 1.8rem; }
+body#contact span#contact-us-email {
+  content: url(images/social_media/email-blue.png); }
+body#contact span#contact-us-facebook {
+  content: url(images/social_media/facebook.png); }
+body#contact span#contact-us-twitter {
+  content: url(images/social_media/twitter.png); }
+body#contact span#contact-us-tumblr {
+  content: url(images/social_media/tumblr.png); }

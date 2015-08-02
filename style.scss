@@ -687,3 +687,24 @@ div.content.show-list {
 		}
 	}
 }
+
+
+/* these are hacks to make the social media icons available to the contact us page */
+body#contact {
+	span.social-media {
+		vertical-align: middle;
+		max-height: 1.5 * $text-rhythm;
+	}
+	span#contact-us-email {
+		content: url(images/social_media/email-blue.png);
+	}
+	span#contact-us-facebook {
+		content: url(images/social_media/facebook.png);
+	}
+	span#contact-us-twitter {
+		content: url(images/social_media/twitter.png);
+	}
+	span#contact-us-tumblr {
+		content: url(images/social_media/tumblr.png);
+	}
+}
