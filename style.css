@@ -233,12 +233,26 @@ header#tlp-header {
       font-style: italic; }
 
 footer#tlp-footer {
-  padding: 0.25rem;
-  padding-left: 0.4rem;
-  font-size: 0.5rem;
-  line-height: 0.6rem; }
-  footer#tlp-footer p {
-    margin: 0; }
+  margin-top: 1.2rem; }
+  footer#tlp-footer div {
+    margin-top: 1.2rem; }
+  footer#tlp-footer div#footer-contact {
+    padding: 0.25rem;
+    padding-left: 0.4rem;
+    font-size: 0.8rem;
+    line-height: 1.8rem; }
+    footer#tlp-footer div#footer-contact p {
+      margin: 0; }
+    footer#tlp-footer div#footer-contact img {
+      vertical-align: middle;
+      max-height: 1.8rem; }
+  footer#tlp-footer div#site-credits {
+    padding: 0.25rem;
+    padding-left: 0.4rem;
+    font-size: 0.5rem;
+    line-height: 0.6rem; }
+    footer#tlp-footer div#site-credits p {
+      margin: 0; }
 
 nav {
   /* for the mobile navigation, don't do the weird rounded corner */ }

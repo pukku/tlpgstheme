@@ -355,12 +355,34 @@ header#tlp-header {
 }
 
 footer#tlp-footer {
-	padding: $cell-padding;
-	padding-left: ($text-rhythm / 3); // same as $nav-inset below
-	font-size: $fs-tiny;
-	line-height: ($text-rhythm / 2);
-	p {
-		margin: 0;
+
+	margin-top: $text-rhythm;
+	div {
+		margin-top: $text-rhythm;
+	}
+
+	div#footer-contact {
+		padding: $cell-padding;
+		padding-left: ($text-rhythm / 3); // same as $nav-inset below
+		font-size: $fs-smaller;
+		line-height: 1.5 * $text-rhythm;
+		p {
+			margin: 0;
+		}
+		img {
+			vertical-align: middle;
+			max-height: 1.5 * $text-rhythm;
+		}
+	}
+
+	div#site-credits {
+		padding: $cell-padding;
+		padding-left: ($text-rhythm / 3); // same as $nav-inset below
+		font-size: $fs-tiny;
+		line-height: ($text-rhythm / 2);
+		p {
+			margin: 0;
+		}
 	}
 }
 
