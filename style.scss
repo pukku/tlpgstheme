@@ -232,9 +232,12 @@ u {
 
 }
 
+$header-height: 175px;
+$header-font-base: 12pt;
 header#tlp-header {
 	margin-bottom: $text-rhythm;
 	background-color: black;
+	height: $header-height;
 
 	&.tlp-header-background-1 {
 		background: url(images/header_background/a_new_brain_1.jpg) 100% -30px no-repeat border-box;
@@ -302,11 +305,19 @@ header#tlp-header {
 
 	.purplehaze {
 		margin: 0;
-		padding: 2*$text-rhythm $text-rhythm;
+		height: $header-height;
 		background-color: rgba($purple, 0.7);
 		background: linear-gradient( rgba($purple, 0.5) 50%, rgba($purple, 0.7) 80%, rgba($purple, 1.0) );
 
 		vertical-align: middle;
+
+		/* values determined by trial and error */
+		@media #{$mq-normal} {
+			padding: 50px $header-font-base;
+		}
+		@media #{$mq-narrow} {
+			padding: 20px $header-font-base;
+		}
 	}
 
 	a:hover {
@@ -318,7 +329,7 @@ header#tlp-header {
 
 		@media #{$mq-narrow} {
 			text-align: center;
-			padding-bottom: (0.5 * $text-rhythm);
+			padding-bottom: 5px;
 		}
 	}
 	.headline {
@@ -331,21 +342,23 @@ header#tlp-header {
 			text-align: center;
 		}
 
-		/* these font sizes are *not* related to the text-rhythm */
+		/* these font sizes are *not* related to the text-rhythm, but were chosen
+		   to make the sizing work correctly.
+		   */
 		h1 {
-			font-size: 2rem;
-			line-height: 2rem;
-			letter-spacing: 0.2rem;
+			font-size: 2 * $header-font-base;
+			line-height: 2 * $header-font-base;
+			letter-spacing: 0.2 * $header-font-base;
 			color: $yellow;
 
 			font-weight: bold;
 		}
 		h2 {
-			margin-top: 0.5rem;
+			margin-top: 0.5 * $header-font-base;
 
-			font-size: 0.9rem;
-			line-height: 1rem;
-			letter-spacing: 0.2rem;
+			font-size: 0.9 * $header-font-base;
+			line-height: 1 * $header-font-base;
+			letter-spacing: 0.2 * $header-font-base;
 			color: $white;
 
 			font-weight: normal;

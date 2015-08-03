@@ -152,7 +152,8 @@ u {
     width: 75%; } }
 header#tlp-header {
   margin-bottom: 1.2rem;
-  background-color: black; }
+  background-color: black;
+  height: 175px; }
   header#tlp-header.tlp-header-background-1 {
     background: url(images/header_background/a_new_brain_1.jpg) 100% -30px no-repeat border-box; }
   header#tlp-header.tlp-header-background-2 {
@@ -197,10 +198,17 @@ header#tlp-header {
     background: url(images/header_background/she_loves_me_5.jpg) 20% -60px no-repeat border-box; }
   header#tlp-header .purplehaze {
     margin: 0;
-    padding: 2.4rem 1.2rem;
+    height: 175px;
     background-color: rgba(51, 0, 102, 0.7);
     background: linear-gradient(rgba(51, 0, 102, 0.5) 50%, rgba(51, 0, 102, 0.7) 80%, #330066);
-    vertical-align: middle; }
+    vertical-align: middle;
+    /* values determined by trial and error */ }
+    @media only screen and (min-width: 601px) {
+      header#tlp-header .purplehaze {
+        padding: 50px 12pt; } }
+    @media only screen and (max-width: 600px) {
+      header#tlp-header .purplehaze {
+        padding: 20px 12pt; } }
   header#tlp-header a:hover {
     text-decoration: none; }
   header#tlp-header .logo {
@@ -208,9 +216,11 @@ header#tlp-header {
     @media only screen and (max-width: 600px) {
       header#tlp-header .logo {
         text-align: center;
-        padding-bottom: 0.6rem; } }
+        padding-bottom: 5px; } }
   header#tlp-header .headline {
-    /* these font sizes are *not* related to the text-rhythm */ }
+    /* these font sizes are *not* related to the text-rhythm, but were chosen
+       to make the sizing work correctly.
+       */ }
     header#tlp-header .headline h1, header#tlp-header .headline h2 {
       margin: 0;
       padding: 0; }
@@ -218,16 +228,16 @@ header#tlp-header {
       header#tlp-header .headline {
         text-align: center; } }
     header#tlp-header .headline h1 {
-      font-size: 2rem;
-      line-height: 2rem;
-      letter-spacing: 0.2rem;
+      font-size: 24pt;
+      line-height: 24pt;
+      letter-spacing: 2.4pt;
       color: #f7e62c;
       font-weight: bold; }
     header#tlp-header .headline h2 {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      line-height: 1rem;
-      letter-spacing: 0.2rem;
+      margin-top: 6pt;
+      font-size: 10.8pt;
+      line-height: 12pt;
+      letter-spacing: 2.4pt;
       color: white;
       font-weight: normal;
       font-style: italic; }
