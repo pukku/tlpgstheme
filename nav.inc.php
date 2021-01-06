@@ -10,6 +10,7 @@
 	</ul>
 	<ul id="help">
 		<li class="title">Be a part</li>
+		<li><a href="membership">Membership</a></li>
 		<li><a href="donate">Donate</a></li>
 		<li><a href="auditions">Auditions</a></li>
 		<li><a href="volunteer">Volunteer</a></li>
